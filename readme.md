@@ -23,3 +23,9 @@ It's recommended to select the managed solution
 - In the Properties of the control, enter the number of lines to use
   - This is not mapped to the number of lines configured for the Multiple Lines of Text fields because we don't have access to that information within the PowerApps Component Framework
 - Click OK, Save and Publish the form
+
+## Error messages
+
+The control surfaces the default error messages provided by Dynamics 365 if the control is trying to set a value that Dynamics won't allow, for example, setting more characters than is allowed
+
+<img src="./img/d365-pcf-charactersremaining-error.gif" alt="Error example">
