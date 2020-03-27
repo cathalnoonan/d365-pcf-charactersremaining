@@ -2,7 +2,7 @@
 
 This is a PCF Control to show the number of characters remaining in the field, similar to what is seen on twitter
 
-<img src="./img/d365-pcf-charactersremaining.gif" alt="Example">
+<img src="./img/d365-pcf-charactersremaining.gif" alt="Example" />
 
 ## Supported controls
 
@@ -28,4 +28,4 @@ It's recommended to install the managed solution
 
 The control surfaces the same error messages as the default controls used by Dynamics 365
 
-<img src="./img/d365-pcf-charactersremaining-error.gif" alt="Error example">
+<img src="./img/d365-pcf-charactersremaining-error.gif" alt="Error example" />
