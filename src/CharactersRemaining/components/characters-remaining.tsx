@@ -73,7 +73,6 @@ export default class CharactersRemainingComponent extends React.Component<IProps
         this.setState({ value }, this.props.notifyOutputChanged);
     }
     private getRemainingNumberOfCharacters = (): number => {
-        // TODO: Consider special characters that are counted as more than one character.
         return this.props.allowedNumberOfCharacters - (this.getValue()?.length || 0);
     }
 

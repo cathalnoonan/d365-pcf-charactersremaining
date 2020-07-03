@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
   <control namespace="Cathal" constructor="CharactersRemaining" display-name-key="CharactersRemaining" description-key="CharactersRemaining description" control-type="standard"
-    version="0.0.1">
+    version="0.0.2">
     
     <property name="value" display-name-key="value_Display_Key" description-key="value_Desc_Key" of-type-group="text" usage="bound" required="true" />
     
