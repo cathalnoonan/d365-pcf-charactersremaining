@@ -14,12 +14,12 @@
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <SolutionRootPath>src</SolutionRootPath>
   </PropertyGroup>
-
+  
   <PropertyGroup>
-    <SolutionPackageType>Managed</SolutionPackageType>
-    <SolutionPackageMapFilePath>src\map.xml</SolutionPackageMapFilePath>
+    <SolutionRootPath>src</SolutionRootPath>
+    <SolutionPackageType>Both</SolutionPackageType>
+    <SolutionPackageZipFilePath>dist\CharactersRemaining.zip</SolutionPackageZipFilePath>
   </PropertyGroup>
   
   <ItemGroup>
@@ -40,7 +40,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\src\project.pcfproj" />
+    <ProjectReference Include="..\control\project.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
