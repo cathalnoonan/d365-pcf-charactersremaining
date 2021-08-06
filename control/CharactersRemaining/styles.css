@@ -92,3 +92,12 @@
     height: 1px;
     background-color: #ddd;
 }
+
+.wrapper.disabled:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.wrapper.disabled:hover .characters-remaining {
+    border: none !important;
+    padding: 1px !important;
+}
