@@ -10,13 +10,16 @@ export class CharactersRemaining implements ComponentFramework.StandardControl<I
     private charactersRemaining: CharactersRemainingComponent
 
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement) {
+        
         const value: string = context.parameters.value.raw || ''
         const numberOfLines: number = context.parameters.numberOfLines.raw || 1
         const allowedNumberOfCharacters: number = context.parameters.value.attributes?.MaxLength || 100
+        const disabled = context.mode.isControlDisabled
         const props: CharactersRemainingComponentProps = {
             value,
             numberOfLines,
             allowedNumberOfCharacters,
+            disabled,
             notifyOutputChanged,
             formatNumber: (n: number): string => context.formatting.formatInteger(n),
         }

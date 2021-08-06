@@ -4,6 +4,7 @@ export interface CharactersRemainingComponentProps {
     value: string
     numberOfLines: number
     allowedNumberOfCharacters: number
+    disabled: boolean
     notifyOutputChanged: () => void
     formatNumber: (n: number) => string
 }
@@ -49,6 +50,7 @@ export class CharactersRemainingComponent extends React.Component<CharactersRema
                         autoCapitalize='false'
                         spellCheck={this.state.active}
                         ref={this.textarea}
+                        disabled={this.props.disabled}
                     />
                     <div className={'label-container' + this.getHiddenClass()}>
                         <hr />
@@ -84,8 +86,14 @@ export class CharactersRemainingComponent extends React.Component<CharactersRema
 
     // Event handlers
     private onChange = (): void => this.setValueInternal(this.textarea.current?.value ?? null)
-    private onClick = (): void => this.textarea.current?.focus()
+    private onClick = (): void => {
+        if (this.props.disabled) return
+        
+        this.textarea.current?.focus()
+    }
     private onFocus = (): void => {
+        if (this.props.disabled) return
+
         // HACK: React setState is not synchronous.
         //
         // Make the CSS class display as active, but don't make the control consider itself as active
