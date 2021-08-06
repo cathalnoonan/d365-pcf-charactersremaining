@@ -16,14 +16,16 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   
+  <!-- Solution Packager overrides -->
   <PropertyGroup>
     <SolutionRootPath>src</SolutionRootPath>
     <SolutionPackageType>Both</SolutionPackageType>
-    <SolutionPackageZipFilePath>dist\CharactersRemaining.zip</SolutionPackageZipFilePath>
+    <SolutionPackageZipFilePath>bin\$(Configuration)\CharactersRemaining.zip</SolutionPackageZipFilePath>
   </PropertyGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="1.*" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
   
   <ItemGroup>
@@ -37,6 +39,9 @@
   
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)\**" Exclude="@(ExcludeDirectories)" />
+    <Content Include="$(SolutionPackageZipFilePath)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   
   <ItemGroup>

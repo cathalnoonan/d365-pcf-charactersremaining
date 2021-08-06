@@ -117,3 +117,6 @@ dist
 
 obj/
 out/
+
+# PCF on Mac creates a directory called ~ on Mac
+~/
