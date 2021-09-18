@@ -3,7 +3,7 @@ import * as React from 'react'
 export interface CharactersRemainingComponentProps {
     value: string
     numberOfLines: number
-    allowedNumberOfCharacters: number
+    maxCharacters: number
     disabled: boolean
     notifyOutputChanged: (newValue: string) => void
     formatNumber: (n: number) => string
@@ -14,8 +14,13 @@ export const CharactersRemainingComponent = (props: CharactersRemainingComponent
     const [value, setValue] = React.useState(props.value)
     const [active, setActive] = React.useState(false)
 
-    const error = value.length > props.allowedNumberOfCharacters
-    const formattedCharactersRemaining = props.formatNumber(props.allowedNumberOfCharacters - value.length)
+    // Allow external changes to the value (e.g. formContext, or changes in the attribute in another control)
+    if (!active && props.value !== value) {
+        setValue(props.value)
+    }
+
+    const error = value.length > props.maxCharacters
+    const formattedCharactersRemaining = props.formatNumber(props.maxCharacters - value.length)
 
     function onChange(element: React.ChangeEvent<HTMLTextAreaElement>): void {
         const newValue = element.currentTarget.value
@@ -23,7 +28,7 @@ export const CharactersRemainingComponent = (props: CharactersRemainingComponent
         props.notifyOutputChanged(newValue)
     }
 
-    function onKeyPress(ev: React.KeyboardEvent) {
+    function onKeyPress(ev: React.KeyboardEvent<HTMLTextAreaElement>) {
         if (props.numberOfLines === 1 && ev.key === 'Enter') {
             ev.preventDefault()
         }
@@ -44,7 +49,8 @@ export const CharactersRemainingComponent = (props: CharactersRemainingComponent
         <div className='wrapper'>
             <div className={`characters-remaining ${active ? 'active' : ''} ${error ? 'error' : ''}`.trim()}
                 onClick={() => setActive(true)}>
-                <textarea value={value}
+                <textarea 
+                    value={value}
                     placeholder={active ? '' : '---'}
                     onChange={onChange}
                     onKeyPress={onKeyPress}

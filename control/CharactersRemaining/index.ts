@@ -24,7 +24,7 @@ export class CharactersRemaining implements ComponentFramework.StandardControl<I
         const props: CharactersRemainingComponentProps = {
             value: context.parameters.value.raw || '',
             numberOfLines: context.parameters.numberOfLines.raw || 1,
-            allowedNumberOfCharacters: context.parameters.value.attributes?.MaxLength || 100,
+            maxCharacters: context.parameters.value.attributes?.MaxLength || 100,
             disabled: context.mode.isControlDisabled,
             notifyOutputChanged: (newValue: string) => (this.value = newValue, this.notifyOutputChanged()),
             formatNumber: (n: number): string => context.formatting.formatInteger(n),

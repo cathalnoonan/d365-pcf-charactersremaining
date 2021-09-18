@@ -37,7 +37,7 @@
     border: 0;
 }
 
-.characters-remaining:hover textarea,
+.characters-remaining:hover textarea:not([disabled]),
 .characters-remaining textarea.active {
     font-weight: 400;
 }
@@ -78,6 +78,7 @@
 .characters-remaining .input {
     white-space: nowrap;
 }
+
 .characters-remaining .input:not(.active) {
     text-overflow: ellipsis;
 }
@@ -87,10 +88,14 @@
 }
 
 .characters-remaining hr {
-    width: 99%; 
-    margin: auto; 
+    width: 99%;
+    margin: auto;
     height: 1px;
     background-color: #ddd;
+}
+
+.characters-remaining textarea:disabled {
+    background-color: #00000000;
 }
 
 .wrapper.disabled:hover {
