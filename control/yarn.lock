@@ -768,29 +768,10 @@
   resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-1.10.159.tgz#2198707bfeede5fd6b24760832abeb8c5274aef2"
   integrity sha512-9Q5JYtEGO68pVZnN+8QDZlNF0lXku607TWSGFlJNcyFF8jFAGp7sQBRg/EHZlC1higyfvd5qnKITIQI0Qs8EqQ==
 
-"@types/fs-extra@^8.0.0":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-8.1.1.tgz#1e49f22d09aa46e19b51c0b013cb63d0d923a068"
-  integrity sha512-TcUlBem321DFQzBNuz8p0CLLKp0VvF/XH9E4KHNmgwyp4E3AfgI5cjiIVZWlbfThBop2qxFIh4+LeY6hVWWZ2w==
-  dependencies:
-    "@types/node" "*"
-
-"@types/node@*", "@types/node@^14.14.37":
+"@types/node@^14.14.37":
   version "14.14.37"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.37.tgz#a3dd8da4eb84a996c36e331df98d82abd76b516e"
   integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
-
-"@types/node@^10.12.12", "@types/node@^10.12.18":
-  version "10.17.56"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.56.tgz#010c9e047c3ff09ddcd11cbb6cf5912725cdc2b3"
-  integrity sha512-LuAa6t1t0Bfw4CuSR0UITsm1hP17YL+u82kfHGrHUWdhlBtH7sa7jGY5z7glGaIj/WDYDkRtgGd+KCjCzxBW1w==
-
-"@types/papaparse@^4.5.9":
-  version "4.5.11"
-  resolved "https://registry.yarnpkg.com/@types/papaparse/-/papaparse-4.5.11.tgz#dcd4f64da55f768c2e2cf92ccac1973c67a73890"
-  integrity sha512-zOw6K7YyA/NuZ2yZ8lzZFe2U3fn+vFfcRfiQp4ZJHG6y8WYWy2SYFbq6mp4yUgpIruJHBjKZtgyE0vvCoWEq+A==
-  dependencies:
-    "@types/node" "*"
 
 "@types/powerapps-component-framework@^1.3.2":
   version "1.3.2"
@@ -802,26 +783,26 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-dom@^16.0.11":
-  version "16.9.12"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.12.tgz#55cd6b17e73922edb9545e5355a0016c1734e6f4"
-  integrity sha512-i7NPZZpPte3jtVOoW+eLB7G/jsX5OM6GqQnH+lC0nq0rqwlK0x8WcMEvYDgFWqWhWMlTltTimzdMax6wYfZssA==
+"@types/react-dom@^17.0.9":
+  version "17.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
+  integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
   dependencies:
-    "@types/react" "^16"
+    "@types/react" "*"
 
-"@types/react@16":
-  version "16.14.12"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.12.tgz#1e38e2114e568f6541f88628a207f72630ee161f"
-  integrity sha512-7nOJgNsRbARhZhvwPm7cnzahtzEi5VJ9OvcQk8ExEEb1t+zaFklwLVkJz7G1kfxX4X/mDa/icTmzE0vTmqsqBg==
+"@types/react@*":
+  version "17.0.21"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.21.tgz#069c43177cd419afaab5ce26bb4e9056549f7ea6"
+  integrity sha512-GzzXCpOthOjXvrAUFQwU/svyxu658cwu00Q9ugujS4qc1zXgLFaO0kS2SLOaMWLt2Jik781yuHCWB7UcYdGAeQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^16", "@types/react@^16.8.3":
-  version "16.14.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.5.tgz#2c39b5cadefaf4829818f9219e5e093325979f4d"
-  integrity sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
+"@types/react@16":
+  version "16.14.12"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.12.tgz#1e38e2114e568f6541f88628a207f72630ee161f"
+  integrity sha512-7nOJgNsRbARhZhvwPm7cnzahtzEi5VJ9OvcQk8ExEEb1t+zaFklwLVkJz7G1kfxX4X/mDa/icTmzE0vTmqsqBg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3460,10 +3441,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pcf-scripts@^1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/pcf-scripts/-/pcf-scripts-1.8.6.tgz#3e03013b47a7a40273037da924c894682267d518"
-  integrity sha512-05KDYQGQky+pUeFpcduhp9EKBxva2ew3UQMH1N8/4PpMwt0Ogwb/v/xEJ0LFShA3hdtj6VySNwQFzLnx1/qqKg==
+pcf-scripts@^1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/pcf-scripts/-/pcf-scripts-1.9.4.tgz#4d3a822ec8c598bc509f03b50c4f7d4be69bc5a5"
+  integrity sha512-/ZEH86j7mg9BoAZeF4fbJD1v0PqTSx6i/bCBktYwuvEn6UNf6r21C13aYbyxya0IgHlRhte0Yn28j/atBstbNg==
   dependencies:
     "@babel/core" "7.2.2"
     "@babel/plugin-proposal-class-properties" "7.2.3"
@@ -3472,7 +3453,6 @@ pcf-scripts@^1.8.6:
     "@babel/plugin-syntax-dynamic-import" "7.2.0"
     "@babel/preset-env" "7.2.3"
     "@babel/preset-react" "7.0.0"
-    "@types/node" "^10.12.12"
     applicationinsights "^1.8.10"
     babel-loader "8.0.4"
     chokidar "^3.5.1"
@@ -3482,22 +3462,17 @@ pcf-scripts@^1.8.6:
     minimist "^1.2.5"
     ts-loader "^8.0.11"
     ts-node "^8.10.2"
-    uuid "^3.3.2"
+    uuid "^8.3.2"
     webpack "4.42.1"
     xml2js "^0.4.19"
     yargs "^16.1.1"
 
-pcf-start@^1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/pcf-start/-/pcf-start-1.8.6.tgz#bbdbaf8420f42b7ef1a33e1be63039262107b6c9"
-  integrity sha512-kC+L6omp7cy7G0/ZiNq27wmnS+rpL1JeTlGNZKav+5FEfIxahPFX04CiKq2WmA49WwNX14yd7BZVsxNVtaREsQ==
+pcf-start@^1.9.4:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/pcf-start/-/pcf-start-1.9.4.tgz#e81562c36c89033d43892df4c8d287b480b41d5f"
+  integrity sha512-oqfE0rXlWy//nsFaplFhbCMyPJ6Wst7EtNaMRK93zapvKXSVNeGJhLMTySfdCSgtE9mTd19qtXyawRL0CVFLag==
   dependencies:
     "@fluentui/react" "7.109.1"
-    "@types/fs-extra" "^8.0.0"
-    "@types/node" "^10.12.18"
-    "@types/papaparse" "^4.5.9"
-    "@types/react" "^16.8.3"
-    "@types/react-dom" "^16.0.11"
     applicationinsights "^1.8.10"
     bluebird "^3.5.4"
     es6-shim "^0.35.5"
@@ -4524,7 +4499,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.0.0, uuid@^3.3.2:
+uuid@^3.0.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
