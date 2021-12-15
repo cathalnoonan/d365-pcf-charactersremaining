@@ -19,8 +19,8 @@
   <!-- Solution Packager overrides -->
   <PropertyGroup>
     <SolutionRootPath>src</SolutionRootPath>
-    <SolutionPackageType>Both</SolutionPackageType>
-    <SolutionPackageZipFilePath>bin\$(Configuration)\CharactersRemaining.zip</SolutionPackageZipFilePath>
+    <SolutionPackageType>Managed</SolutionPackageType>
+    <SolutionPackageZipFilePath>..\dist\$(Name).zip</SolutionPackageZipFilePath>
   </PropertyGroup>
   
   <ItemGroup>
