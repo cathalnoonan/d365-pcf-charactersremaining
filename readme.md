@@ -12,9 +12,7 @@ This can be used on a "Single Line of Text" or a "Multiple Lines of Text" field
 
 ## Installing the control
 
-Solution files can be found on the <a href="https://github.com/cathalnoonan/d365-pcf-charactersremaining/releases">releases page</a> 
-
-It's recommended to install the managed solution
+Solution file can be found on the <a href="https://github.com/cathalnoonan/d365-pcf-charactersremaining/releases">releases page</a>
 
 ## Configuration
 
