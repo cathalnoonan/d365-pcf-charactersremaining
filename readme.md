@@ -1,6 +1,7 @@
 # D365 PCF - Characters Remaining
 
 [![Build](https://github.com/cathalnoonan/d365-pcf-charactersremaining/actions/workflows/BUILD.yml/badge.svg)](https://github.com/cathalnoonan/d365-pcf-charactersremaining/actions/workflows/BUILD.yml)
+[![Github All Releases](https://img.shields.io/github/downloads/cathalnoonan/d365-pcf-charactersremaining/total.svg)]()
 
 This is a PCF Control to show the number of characters remaining in the field, similar to what is seen on twitter
 
