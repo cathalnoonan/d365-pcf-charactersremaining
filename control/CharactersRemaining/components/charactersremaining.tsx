@@ -49,7 +49,7 @@ export const CharactersRemainingComponent = (props: CharactersRemainingComponent
         <div className='wrapper'>
             <div className={`characters-remaining ${active ? 'active' : ''} ${error ? 'error' : ''}`.trim()}
                 onClick={() => setActive(true)}>
-                <textarea 
+                <textarea
                     value={value}
                     placeholder={active ? '' : '---'}
                     onChange={onChange}

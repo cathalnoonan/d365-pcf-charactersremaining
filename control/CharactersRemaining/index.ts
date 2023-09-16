@@ -10,11 +10,7 @@ export class CharactersRemaining implements ComponentFramework.StandardControl<I
     private notifyOutputChanged: () => void
     private value: string
 
-    public init(context: ComponentFramework.Context<IInputs>, 
-                notifyOutputChanged: () => void, 
-                state: ComponentFramework.Dictionary, 
-                container: HTMLDivElement) {
-        
+    public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement) {
         this.container = container
         this.notifyOutputChanged = notifyOutputChanged
     }
@@ -48,7 +44,7 @@ export class CharactersRemaining implements ComponentFramework.StandardControl<I
 }
 
 // HACK: 'context.formatting.formatInteger' throws an error for negative numbers in the test harness.
-// 
+//
 // In the test harness calling context.formatting.formatInteger with a negative number will throw an error.
 // 'String.format is not defined' : ./ccf/ts/es6/CustomControls/Models/PropertyFallbacks/Formatting/FormatterUtils.js
 if (!(String as any).format) {
