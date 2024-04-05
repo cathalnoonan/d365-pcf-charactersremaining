@@ -4,7 +4,7 @@
     <UniqueName>CharactersRemaining</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="Characters Remaining" languagecode="1033" />
+      <LocalizedName description="Characters Remaining. https://github.com/cathalnoonan/d365-pcf-charactersremaining" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.2.3</Version>
