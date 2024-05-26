@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Cathal" constructor="CharactersRemaining" display-name-key="CharactersRemaining" description-key="CharactersRemaining description" control-type="standard" version="1.2.3">
+  <control namespace="Cathal" constructor="CharactersRemaining" display-name-key="CharactersRemaining" description-key="CharactersRemaining description" control-type="standard" version="1.2.4">
     <property name="value" display-name-key="value_Display_Key" description-key="value_Desc_Key" of-type-group="text" usage="bound" required="true" />
     <property name="numberOfLines" display-name-key="numberOfLines_Display_Key" description-key="numberOfLines_Desc_Key" of-type="Whole.None" usage="input" required="true" default-value="1" />
     <type-group name="text">
@@ -11,7 +11,7 @@
     <resources>
       <code path="index.ts" order="1" />
       <css path="styles.css" order="1" />
-      <resx path="strings/CharactersRemaining.1033.resx" version="1.2.3" />
+      <resx path="strings/CharactersRemaining.1033.resx" version="1.2.4" />
     </resources>
   </control>
 </manifest>
